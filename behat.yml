@@ -1,0 +1,16 @@
+default:
+  paths:
+    features:  features
+    bootstrap: features/bootstrap
+  extensions:
+    Behat\MinkExtension\Extension:
+      goutte: ~
+      selenium2: ~
+      base_url: http://www.myvouchercodes.co.uk.pele.local
+annotations:
+  paths:
+    features: features/annotations
+
+closures:
+  paths:
+    features: features/closures

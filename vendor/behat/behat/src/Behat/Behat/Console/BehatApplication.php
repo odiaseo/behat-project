@@ -139,9 +139,9 @@ class BehatApplication extends Application
         $cwd = rtrim(getcwd(), DIRECTORY_SEPARATOR);
         foreach (array_filter(array(
             $cwd.DIRECTORY_SEPARATOR.'behat.yml',
-            $cwd.DIRECTORY_SEPARATOR.'behat.yml.dist',
+            $cwd.DIRECTORY_SEPARATOR.'behat.yml',
             $cwd.DIRECTORY_SEPARATOR.'config'.DIRECTORY_SEPARATOR.'behat.yml',
-            $cwd.DIRECTORY_SEPARATOR.'config'.DIRECTORY_SEPARATOR.'behat.yml.dist',
+            $cwd.DIRECTORY_SEPARATOR.'config'.DIRECTORY_SEPARATOR.'behat.yml',
         ), 'is_file') as $path) {
             return $path;
         }
