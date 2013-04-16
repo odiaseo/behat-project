@@ -91,14 +91,14 @@ class InitProcessor extends Processor
             );
 
             file_put_contents(
-                $bootstrapPath.DIRECTORY_SEPARATOR.'FeatureContext.php',
+                $bootstrapPath.DIRECTORY_SEPARATOR.'RegisterContext.php',
                 $this->getFeatureContextSkelet()
             );
 
             $output->writeln(
                 '<info>+f</info> ' .
                 str_replace($basePath, '', realpath($bootstrapPath)).DIRECTORY_SEPARATOR.
-                'FeatureContext.php <comment>- place your feature related code here</comment>'
+                'RegisterContext.php <comment>- place your feature related code here</comment>'
             );
         }
     }
